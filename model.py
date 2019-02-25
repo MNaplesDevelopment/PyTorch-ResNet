@@ -91,7 +91,7 @@ class ResNet(nn.Module):
 model = ResNet().cuda()
 
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
+optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 num_batches = len(train_loader)
 
